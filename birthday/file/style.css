@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: rgb(0, 0, 0);
+  overflow: auto;
+}
+a {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+}
+#main {
+  position: relative;
+  width: 100%;
+}
+#wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1100px;
+  height: 680px;
+  margin-top: 10px;
+}
+#text {
+  width: 272px;
+  height: 560px;
+  left: 188px;
+  top: 80px;
+  position: absolute;
+}
+#code {
+  display: none;
+  color: rgb(56, 9, 174);
+  font-size: 16px;
+  margin-top: -20px;
+  line-height: 20px;
+  font-size: larger;
+  font-weight: bolder;
+  margin-left: -360px;
+}
+#clock-box {
+  position: absolute;
+  top: 600px;
+  font-size: 28px;
+  display: none;
+}
+#clock-box a {
+  font-size: 28px;
+  text-decoration: none;
+}
+#clock {
+  margin-left: 40px;
+}
+#clock .digit {
+  font-size: 48px;
+  margin-right: 15px
+}
+#canvas {
+  margin: 0 auto;
+  width: 1100px;
+  height: 680px;
+}
+#error {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+  display: none;
+}
+.hand {
+  cursor: pointer;
+}
+.say {
+  margin-left: 0px;
+}
+.space {
+  margin-right: 150px;
+}
+
+#message-box{
+  position: absolute;
+  margin-top:550px;
+  font-size: 25px;
+  font-family: monospace;
+  margin-left: 40px;
+}
+
+#customImage {
+  position: absolute;
+  bottom: 20px;
+  left: -180px;
+  width: 300px;  
+  height: 200px;            
+  overflow: hidden;     
+}
+
+#customImage2 {
+  position: absolute;
+  bottom: 20px;
+  right: -900px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+#customImage img {
+  width: 100%;           
+  height: 100%;          
+  object-fit: cover; 
+}
+
+@media (max-width: 800px) {
+  #clock-box {
+     left: 10px;  /* Even more to the left on smaller screens */
+  }
+  #clock .digit {
+     font-size: 32px;  /* Smaller font size on smaller screens */
+  }
+}
